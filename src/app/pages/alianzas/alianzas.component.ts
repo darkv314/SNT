@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-alianzas',
   imports: [],
   templateUrl: './alianzas.component.html',
-  styleUrl: './alianzas.component.css'
 })
 export class AlianzasComponent {
 
