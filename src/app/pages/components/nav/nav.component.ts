@@ -3,7 +3,7 @@ import { navLinks } from '../../helpers/nav.helper';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  selector: 'app-nav',
+  selector: 'nav-bar',
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './nav.component.html',
   host: {

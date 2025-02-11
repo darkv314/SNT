@@ -2,10 +2,14 @@
 @import "tailwindcss";
 
 @theme {
-
   /* Colors */
   --color-primary: #2A6FD0;
+  --color-secondary: #F39501;
 
   /* Fonts */
   --font-poppins: Poppins, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-poppins);
 }

@@ -1,12 +1,12 @@
 <nav class="flex justify-between sticky top-0 items-center p-4 font-poppins bg-white shadow-md rounded-b-2xl z-10">
   <a routerLink="inicio" class="flex items-center">
     <img src="assets/logo.png" alt="SNT Group" />
-    <p class="text-3xl font-bold">SNT Group</p>
+    <p class="text-xl font-bold">SNT Group</p>
   </a>
   <ul class="flex gap-6 text-gray-400">
     @for (link of navLinks; track $index) {
       <a class="hover:text-black" [routerLink]="link.path" routerLinkActive="font-bold text-black">{{ link.label }}</a>
     }
   </ul>
-  <a class="bg-primary text-white p-4 rounded-lg" routerLink="'/contacto'" routerLinkActive="'active'">Contacto</a>
+  <a class="bg-primary text-white p-4 rounded-lg font-semibold" routerLink="'/contacto'" routerLinkActive="'active'">Contacto</a>
 </nav>

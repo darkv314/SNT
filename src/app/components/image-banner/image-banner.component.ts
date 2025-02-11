@@ -1,7 +1,7 @@
 import { Component, input } from '@angular/core';
 
 @Component({
-  selector: 'app-image-banner',
+  selector: 'image-banner',
   imports: [],
   templateUrl: './image-banner.component.html',
   host: {
@@ -9,6 +9,9 @@ import { Component, input } from '@angular/core';
   }
 })
 export class ImageBannerComponent {
-  title = input('title');
-  imageUrl = input('imageUrl');
+  imageTitle = input.required();
+  imageUrl = input.required();
+  mainText = input.required();
+  initialText = input.required();
+  lastText = input.required();
 }
