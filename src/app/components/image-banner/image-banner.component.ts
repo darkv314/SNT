@@ -1,8 +1,9 @@
 import { Component, input } from '@angular/core';
+import { ButtonComponent } from "../button/button.component";
 
 @Component({
   selector: 'image-banner',
-  imports: [],
+  imports: [ButtonComponent],
   templateUrl: './image-banner.component.html',
   host: {
     class: 'contents'
