@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { ImageBannerComponent } from "../../components/image-banner/image-banner.component";
+import { SeparatingLineComponent } from "../../components/separating-line/separating-line.component";
 
 @Component({
   selector: 'inicio',
-  imports: [ImageBannerComponent],
+  imports: [ImageBannerComponent, SeparatingLineComponent],
   templateUrl: './inicio.component.html',
 })
 export class InicioComponent {
