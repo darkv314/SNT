@@ -8,11 +8,11 @@ export const navLinks = [
     path: 'nosotros',
   },
   {
-    label: 'Actividades',
-    path: 'actividades',
-  },
-  {
     label: 'Alianzas',
     path: 'alianzas',
+  },
+  {
+    label: 'Actividades',
+    path: 'actividades',
   },
 ]

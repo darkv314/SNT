@@ -1,8 +1,5 @@
 <nav class="flex justify-between sticky top-0 items-center p-4 font-poppins bg-white shadow-2xl rounded-b-2xl z-10">
-  <a routerLink="inicio" class="flex items-center">
-    <img src="assets/logo.png" alt="SNT Group" />
-    <p class="text-xl font-bold">SNT Group</p>
-  </a>
+  <app-logo />
   <separating-line class="w-[1px] h-[70px]" />
   <ul class="flex gap-6 text-gray-400">
     @for (link of navLinks; track $index) {
