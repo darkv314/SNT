@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 import { ImageBannerComponent } from "../../components/image-banner/image-banner.component";
-import { SeparatingLineComponent } from "../../components/separating-line/separating-line.component";
+import { FacebookComponent } from "../../components/icons/facebook/facebook.component";
+import { InfoCardComponent } from "../../components/info-card/info-card.component";
+import { porqueNosotros } from '../data/inicio.data';
+import { DynamicIconComponent } from "../../components/icons/dynamic-icon/dynamic-icon.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'inicio',
-  imports: [ImageBannerComponent, SeparatingLineComponent],
+  imports: [ImageBannerComponent, InfoCardComponent, DynamicIconComponent, CommonModule],
   templateUrl: './inicio.component.html',
 })
 export class InicioComponent {
@@ -15,4 +19,5 @@ export class InicioComponent {
     mainText: 'construimos ',
     lastText: 'tu futuro'
   }
+  cards = porqueNosotros;
 }

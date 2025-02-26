@@ -10,6 +10,9 @@
   --font-poppins: Poppins, sans-serif;
   --font-hind: "Hind Vadodara", serif;
   --font-bebas: "Bebas Neue", serif;
+
+  /* Text Sizes */
+  --text-clamp-header: clamp(1.5rem, 5vw, 5rem);
 }
 
 h1, h2, h3 {
