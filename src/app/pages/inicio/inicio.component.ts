@@ -5,10 +5,11 @@ import { InfoCardComponent } from "../../components/info-card/info-card.componen
 import { porqueNosotros } from '../data/inicio.data';
 import { DynamicIconComponent } from "../../components/icons/dynamic-icon/dynamic-icon.component";
 import { CommonModule } from '@angular/common';
+import { CarouselComponent, SlideTemplateDirective } from "../../components/carousel/carousel.component";
 
 @Component({
   selector: 'inicio',
-  imports: [ImageBannerComponent, InfoCardComponent, DynamicIconComponent, CommonModule],
+  imports: [ImageBannerComponent, InfoCardComponent, DynamicIconComponent, CommonModule, CarouselComponent, SlideTemplateDirective],
   templateUrl: './inicio.component.html',
 })
 export class InicioComponent {

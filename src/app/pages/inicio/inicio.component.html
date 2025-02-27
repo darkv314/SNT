@@ -28,7 +28,19 @@
         </info-card>
       }
     </div>
+  </section>
+  <section class="flex flex-col w-full px-10 py-4 gap-12">
+    <h2 class="text-4xl font-bold self-center">
+      Actividades
+    </h2>
+    <carousel [slides]="cards" slideTemplate >
+      <ng-template slideTemplate let-card>
+        <info-card [title]="card.title" [description]="card.descripcion">
+          <dynamic-icon [icon]="card.icon" class="size-[40px]" [style.stroke]="card.color"></dynamic-icon>
+        </info-card>
+      </ng-template>
 
+    </carousel>
   </section>
 </section>
 

@@ -1,0 +1,20 @@
+<div class="embla" carouselDirective>
+  <div class="embla__container">
+    @for (slide of slides(); track $index) {
+      <div class="embla__slide">
+        <ng-template
+        [ngTemplateOutlet]="slideTemplate.call(slide)"
+        [ngTemplateOutletContext]="{$implicit: slide}">
+        </ng-template>
+      </div>
+    }
+  </div>
+</div>
+
+<button (click)="next()">
+  next
+</button>
+
+<button (click)="prev()">
+  prev
+</button>
