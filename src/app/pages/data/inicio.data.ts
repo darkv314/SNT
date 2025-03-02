@@ -7,7 +7,7 @@ export const porqueNosotros = [
   },
   {
     title: 'Enfoque Integral',
-    icon:'refresh',
+    icon: 'refresh',
     color: '#E27244',
     descripcion: 'Nos enorgullece ofrecer un enfoque integral en cada proyecto. Desde la planificación inicial hasta la entrega final, trabajamos en estrecha colaboración con nuestros clientes para comprender sus necesidades y superar sus expectativas.',
   },
@@ -72,5 +72,20 @@ export const actividades = [
     title: 'Proyectos Masivos',
     descripcion: 'Ejecutamos proyectos de alto impacto social, como transporte público y plantas de tratamiento.',
     img: 'assets/inicio/actividades/proyectos-masivos.jpg',
+  }
+]
+
+export const direcciones = [
+  {
+    city: 'La Paz',
+    address: 'Achumani, Calle 15, Calle Miguel Quentalle #10',
+    email: 'info@snt.la',
+    phone: '591(3)-3459004',
+  },
+  {
+    city: 'Santa Cruz',
+    address: 'Barrio Hamacas, Calle Piso Firme #3815',
+    email: 'info@snt.la',
+    phone: '591(2)-2776191 - 2773949'
   }
 ]

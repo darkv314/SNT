@@ -1,50 +1,101 @@
 <section class="flex gap-12 flex-col relative z-0">
-  <image-banner [imageUrl]="banner.imageUrl" [imageTitle]="banner.imageTitle" [initialText]="banner.initialText" [mainText]="banner.mainText" [lastText]="banner.lastText"/>
+  <image-banner
+    [imageUrl]="banner.imageUrl"
+    [imageTitle]="banner.imageTitle"
+    [initialText]="banner.initialText"
+    [mainText]="banner.mainText"
+    [lastText]="banner.lastText"
+  />
   <!-- <separating-line class="h-[2px] w-full"/> -->
   <section class="flex gap-28 self-center h-[450px]">
     <div class="relative w-[450px]">
-      <img src="assets/inicio/aboutus.jpg" class=" size-full rounded-4xl shadow-2xl" alt="">
+      <img
+        src="assets/inicio/aboutus.jpg"
+        class="size-full rounded-4xl shadow-2xl"
+        alt=""
+      />
     </div>
     <!-- <separating-line class="w-[2px] h-full"/> -->
-    <article class="flex flex-col gap-4 justify-center items-center pattern-boxes pattern-blue-500 pattern-bg-white
-    pattern-size-6 pattern-opacity-20">
-    <h2 class="text-4xl font-semibold bg-primary p-4 rounded-xl text-white shadow-2xl">Nosotros</h2>
-    <div class="bg-white relative rounded-2xl">
-      <p class="max-w-[80ch] rounded-2xl text-lg font-semibold text-justify leading-8 font-hind p-8  shadow-2xl relative">
-        En <span class="text-secondary">SNT Group</span>, somos un equipo multidisciplinario dedicado a transformar ideas en realidades sólidas y duraderas. Contamos con expertos en arquitectura, ingeniería y gestión de proyectos, lo que nos permite abordar cada fase constructiva con precisión y eficiencia.
-        Nos comprometemos a la <span class="text-secondary">excelencia</span> en cada proyecto, asegurando los más altos estándares de <span class="text-secondary">calidad, seguridad y sustentabilidad</span>. Valoramos la comunicación abierta con nuestros clientes, construyendo relaciones basadas en <span class="text-secondary">confianza y transparencia</span> para superar sus expectativas y entregar resultados que enriquezcan a la comunidad.
-      </p>
-    </div>
+    <article
+      class="flex flex-col gap-4 justify-center items-center pattern-boxes pattern-blue-500 pattern-bg-white pattern-size-6 pattern-opacity-20"
+    >
+      <h2
+        class="text-4xl font-semibold bg-primary p-4 rounded-xl text-white shadow-2xl"
+      >
+        Nosotros
+      </h2>
+      <div class="bg-white relative rounded-2xl">
+        <p
+          class="max-w-[80ch] rounded-2xl text-lg font-semibold text-justify leading-8 font-hind p-8 shadow-2xl relative"
+        >
+          En <span class="text-secondary">SNT Group</span>, somos un equipo
+          multidisciplinario dedicado a transformar ideas en realidades sólidas
+          y duraderas. Contamos con expertos en arquitectura, ingeniería y
+          gestión de proyectos, lo que nos permite abordar cada fase
+          constructiva con precisión y eficiencia. Nos comprometemos a la
+          <span class="text-secondary">excelencia</span> en cada proyecto,
+          asegurando los más altos estándares de
+          <span class="text-secondary"
+            >calidad, seguridad y sustentabilidad</span
+          >. Valoramos la comunicación abierta con nuestros clientes,
+          construyendo relaciones basadas en
+          <span class="text-secondary">confianza y transparencia</span> para
+          superar sus expectativas y entregar resultados que enriquezcan a la
+          comunidad.
+        </p>
+      </div>
     </article>
   </section>
   <section class="flex flex-col w-full px-10 py-4 gap-12">
-    <h2 class="text-4xl font-bold self-center">
-      Por qué elegirnos?
-    </h2>
+    <h2 class="text-4xl font-bold self-center">Por qué elegirnos?</h2>
     <div class="grid grid-cols-3 grid-rows-2 gap-8">
       @for (card of cards; track $index) {
-        <info-card [title]="card.title" [description]="card.descripcion">
-          <dynamic-icon [icon]="card.icon" class="size-[40px]" [style.stroke]="card.color"></dynamic-icon>
-        </info-card>
+      <info-card [title]="card.title" [description]="card.descripcion">
+        <dynamic-icon
+          [icon]="card.icon"
+          class="size-[40px]"
+          [style.stroke]="card.color"
+        ></dynamic-icon>
+      </info-card>
       }
     </div>
   </section>
   <section class="flex flex-col w-full px-10 py-4 gap-10">
-    <h2 class="text-4xl font-bold self-center">
-      Actividades
-    </h2>
-    <carousel [slides]="activities" slideTemplate >
+    <h2 class="text-4xl font-bold self-center">Actividades</h2>
+    <carousel [slides]="activities" slideTemplate>
       <ng-template slideTemplate let-card>
-        <image-card [description]="card.descripcion" [title]="card.title" [imgSrc]="card.img"/>
+        <image-card
+          [description]="card.descripcion"
+          [title]="card.title"
+          [imgSrc]="card.img"
+        />
       </ng-template>
     </carousel>
   </section>
   <section class="flex flex-col w-full px-10 py-4 gap-12">
-    <h2 class="text-4xl font-bold self-center">
-      Alianzas
-    </h2>
-    <infinite-carousel [items]="alianzas"/>
+    <h2 class="text-4xl font-bold self-center">Alianzas</h2>
+    <infinite-carousel [items]="alianzas" />
+  </section>
+  <section class="flex flex-col w-full px-10 py-4 gap-12">
+    <h2 class="text-4xl font-bold self-center">Dónde encontrarnos</h2>
+    <div class="grid grid-cols-[2fr_1fr] gap-8">
+      <img
+        class="rounded-2xl object-cover object-center"
+        src="assets/inicio/snt-office.jpg"
+        alt="SNT Oficina"
+      />
+      <section
+        class="flex flex-col gap-4 justify-center bg-[#000000b2] rounded-2xl text-white p-8"
+      >
+        @for (direction of direcciones; track $index) {
+        <direction
+          [city]="direction.city"
+          [address]="direction.address"
+          [email]="direction.email"
+          [phone]="direction.phone"
+        ></direction>
+        }
+      </section>
+    </div>
   </section>
 </section>
-
-
