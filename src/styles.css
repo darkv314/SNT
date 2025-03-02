@@ -13,6 +13,9 @@
 
   /* Text Sizes */
   --text-clamp-header: clamp(1.5rem, 5vw, 5rem);
+
+  /* Animation */
+  --animate-infinite-scroll:infinite-scroll 25s linear infinite;
 }
 
 h1, h2 {
@@ -24,4 +27,13 @@ h1, h2 {
   opacity: 0.1;
   background-image:  linear-gradient(#000000 2.2px, transparent 2.2px), linear-gradient(to right, #000000 2.2px, #ffffff 2.2px);
   background-size: 44px 44px;
+}
+
+@keyframes 'infinite-scroll' {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }

@@ -1,5 +1,5 @@
-import { NgTemplateOutlet } from '@angular/common';
-import { Component, contentChild, Directive, ElementRef, input, TemplateRef, viewChild } from '@angular/core';
+import { NgClass, NgTemplateOutlet } from '@angular/common';
+import { Component, contentChild, Directive, ElementRef, HostListener, input, TemplateRef, viewChild } from '@angular/core';
 import EmblaCarousel, { EmblaCarouselType } from 'embla-carousel'
 import { ArrowLeftComponent } from "../icons/arrow-left/arrow-left.component";
 import { ArrowRightComponent } from "../icons/arrow-right/arrow-right.component";
@@ -20,7 +20,7 @@ export class SlideTemplateDirective {
 
 @Component({
   selector: 'carousel',
-  imports: [CarouselDirective, NgTemplateOutlet, ArrowLeftComponent, ArrowRightComponent],
+  imports: [CarouselDirective, NgTemplateOutlet, ArrowLeftComponent, ArrowRightComponent, NgClass],
   templateUrl: './carousel.component.html',
   styleUrls: [`./carousel.component.css`]
 })
@@ -43,5 +43,22 @@ export class CarouselComponent<T> {
 
   prev() {
     this.carouselApi?.scrollPrev();
+  }
+
+  isDragging = false;
+
+  @HostListener('mousedown', ['$event'])
+  onMouseDown(event: MouseEvent) {
+    this.isDragging = true;
+  }
+
+  @HostListener('mouseup', ['$event'])
+  onMouseUp(event: MouseEvent) {
+    this.isDragging = false;
+  }
+
+  @HostListener('mouseleave', ['$event'])
+  onMouseLeave(event: MouseEvent) {
+    this.isDragging = false;
   }
 }

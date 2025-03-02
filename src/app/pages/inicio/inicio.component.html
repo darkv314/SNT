@@ -37,8 +37,13 @@
       <ng-template slideTemplate let-card>
         <image-card [description]="card.descripcion" [title]="card.title" [imgSrc]="card.img"/>
       </ng-template>
-
     </carousel>
+  </section>
+  <section class="flex flex-col w-full px-10 py-4 gap-12">
+    <h2 class="text-4xl font-bold self-center">
+      Alianzas
+    </h2>
+    <infinite-carousel [items]="alianzas"/>
   </section>
 </section>
 

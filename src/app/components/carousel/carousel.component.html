@@ -1,6 +1,6 @@
 <div class="flex flex-col gap-2">
   <div class="embla relative py-4" carouselDirective>
-    <div class="embla__container">
+    <div class="embla__container cursor-grab" [ngClass]="{'cursor-grabbing': isDragging}">
       @for (slide of slides(); track $index) {
         <div class="embla__slide px-2">
           <ng-template

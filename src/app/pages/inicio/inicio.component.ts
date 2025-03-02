@@ -6,10 +6,12 @@ import { DynamicIconComponent } from "../../components/icons/dynamic-icon/dynami
 import { CommonModule } from '@angular/common';
 import { CarouselComponent, SlideTemplateDirective } from "../../components/carousel/carousel.component";
 import { ImageCardComponent } from "../../components/image-card/image-card.component";
+import { InfiniteCarouselComponent } from "../../components/infinite-carousel/infinite-carousel.component";
+import { alianzas } from '../data/alianzas.data';
 
 @Component({
   selector: 'inicio',
-  imports: [ImageBannerComponent, InfoCardComponent, DynamicIconComponent, CommonModule, CarouselComponent, SlideTemplateDirective, ImageCardComponent],
+  imports: [ImageBannerComponent, InfoCardComponent, DynamicIconComponent, CommonModule, CarouselComponent, SlideTemplateDirective, ImageCardComponent, InfiniteCarouselComponent],
   templateUrl: './inicio.component.html',
 })
 export class InicioComponent {
@@ -22,4 +24,5 @@ export class InicioComponent {
   }
   cards = porqueNosotros;
   activities = actividades;
+  alianzas = alianzas;
 }
