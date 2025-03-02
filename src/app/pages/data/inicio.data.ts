@@ -36,3 +36,41 @@ export const porqueNosotros = [
     descripcion: 'Nos preocupamos por la sostenibilidad en todos nuestros proyectos. Utilizamos materiales ecológicos y adoptamos prácticas responsables en todas nuestras operaciones.',
   }
 ]
+
+export const actividades = [
+  {
+    title: 'Estudios Técnicos',
+    descripcion: 'Realizamos estudios de viabilidad e impacto ambiental para establecer una base sólida en cada proyecto.',
+    img: 'assets/inicio/actividades/estudios-tecnicos.jpg',
+  },
+  {
+    title: 'Infraestructura',
+    descripcion: 'Construimos desde edificios comerciales hasta complejos residenciales, priorizando calidad y durabilidad.',
+    img: 'assets/inicio/actividades/infraestructura.jpg',
+  },
+  {
+    title: 'Carreteras',
+    descripcion: 'Diseñamos y construimos carreteras con un enfoque en conectividad y sostenibilidad.',
+    img: 'assets/inicio/actividades/carreteras.jpg',
+  },
+  {
+    title: 'Servicios Petroleros',
+    descripcion: 'Proveemos infraestructura para la extracción y transporte de hidrocarburos, cumpliendo con altos estándares de seguridad.',
+    img: 'assets/inicio/actividades/servicios-petroleros.jpg',
+  },
+  {
+    title: 'Tecnología',
+    descripcion: 'Implementamos soluciones de monitoreo y digitalización para mejorar la eficiencia en cada proyecto.',
+    img: 'assets/inicio/actividades/tecnologia.jpg',
+  },
+  {
+    title: 'Salud',
+    descripcion: 'Desarrollamos hospitales y clínicas que optimizan el bienestar de los pacientes y el desempeño del personal médico.',
+    img: 'assets/inicio/actividades/salud.jpg',
+  },
+  {
+    title: 'Proyectos Masivos',
+    descripcion: 'Ejecutamos proyectos de alto impacto social, como transporte público y plantas de tratamiento.',
+    img: 'assets/inicio/actividades/proyectos-masivos.jpg',
+  }
+]

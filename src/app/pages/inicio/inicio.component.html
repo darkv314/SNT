@@ -8,11 +8,11 @@
     <!-- <separating-line class="w-[2px] h-full"/> -->
     <article class="flex flex-col gap-4 justify-center items-center pattern-boxes pattern-blue-500 pattern-bg-white
     pattern-size-6 pattern-opacity-20">
-    <h2 class="text-4xl font-semibold bg-[#f1f1f1] p-4 rounded-xl text-primary shadow-2xl">Nosotros</h2>
-    <div class="bg-primary relative rounded-2xl">
-      <p class="max-w-[80ch] rounded-2xl text-lg font-bold text-white text-justify leading-8 font-hind p-8  shadow-2xl relative">
-        En SNT Group, somos un equipo multidisciplinario dedicado a transformar ideas en realidades sólidas y duraderas. Contamos con expertos en arquitectura, ingeniería y gestión de proyectos, lo que nos permite abordar cada fase constructiva con precisión y eficiencia.
-        Nos comprometemos a la excelencia en cada proyecto, asegurando los más altos estándares de calidad, seguridad y sustentabilidad. Valoramos la comunicación abierta con nuestros clientes, construyendo relaciones basadas en confianza y transparencia para superar sus expectativas y entregar resultados que enriquezcan a la comunidad.
+    <h2 class="text-4xl font-semibold bg-primary p-4 rounded-xl text-white shadow-2xl">Nosotros</h2>
+    <div class="bg-white relative rounded-2xl">
+      <p class="max-w-[80ch] rounded-2xl text-lg font-semibold text-justify leading-8 font-hind p-8  shadow-2xl relative">
+        En <span class="text-secondary">SNT Group</span>, somos un equipo multidisciplinario dedicado a transformar ideas en realidades sólidas y duraderas. Contamos con expertos en arquitectura, ingeniería y gestión de proyectos, lo que nos permite abordar cada fase constructiva con precisión y eficiencia.
+        Nos comprometemos a la <span class="text-secondary">excelencia</span> en cada proyecto, asegurando los más altos estándares de <span class="text-secondary">calidad, seguridad y sustentabilidad</span>. Valoramos la comunicación abierta con nuestros clientes, construyendo relaciones basadas en <span class="text-secondary">confianza y transparencia</span> para superar sus expectativas y entregar resultados que enriquezcan a la comunidad.
       </p>
     </div>
     </article>
@@ -29,15 +29,13 @@
       }
     </div>
   </section>
-  <section class="flex flex-col w-full px-10 py-4 gap-12">
+  <section class="flex flex-col w-full px-10 py-4 gap-10">
     <h2 class="text-4xl font-bold self-center">
       Actividades
     </h2>
-    <carousel [slides]="cards" slideTemplate >
+    <carousel [slides]="activities" slideTemplate >
       <ng-template slideTemplate let-card>
-        <info-card [title]="card.title" [description]="card.descripcion">
-          <dynamic-icon [icon]="card.icon" class="size-[40px]" [style.stroke]="card.color"></dynamic-icon>
-        </info-card>
+        <image-card [description]="card.descripcion" [title]="card.title" [imgSrc]="card.img"/>
       </ng-template>
 
     </carousel>

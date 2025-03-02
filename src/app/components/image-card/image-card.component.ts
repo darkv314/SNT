@@ -9,4 +9,5 @@ export class ImageCardComponent {
   title = input<string>();
   imgSrc = input<string>();
   imgTitle = input<string>();
+  description = input<string>();
 }
