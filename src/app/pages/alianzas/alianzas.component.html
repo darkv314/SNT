@@ -1,1 +1,28 @@
-<p>alianzas works!</p>
+<section class="flex gap-8 flex-col relative z-0">
+  <image-banner
+    [imageUrl]="banner.imageUrl"
+    [imageTitle]="banner.imageTitle"
+    [mainText]="banner.mainText"
+  />
+  <infinite-carousel [items]="alianzas" />
+  <article
+    class="bg-dark-transparency text-white rounded-2xl p-8 text-xl font-semibold"
+  >
+    <p>
+      SNT Group se destaca como un puente esencial que conecta a la comunidad
+      local con productos de
+      <span class="text-secondary">calidad mundial</span>. A través de
+      representaciones y distribuciones
+      <span class="text-secondary">exclusivas</span>, la empresa ofrece una
+      amplia gama de productos que abarcan desde
+      <span class="text-secondary">tecnología avanzada</span> hasta artículos
+      esenciales para el hogar y la industria. Su compromiso con la
+      <span class="text-secondary"
+        >calidad, los precios competitivos y la atención personalizada
+        garantiza</span
+      >
+      que los clientes tengan acceso a lo mejor del mercado global, adaptado a
+      sus necesidades específicas.
+    </p>
+  </article>
+</section>
