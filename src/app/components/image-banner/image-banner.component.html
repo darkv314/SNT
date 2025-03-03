@@ -1,11 +1,21 @@
-
-  <section class="relative md:h-[80dvh] h-[50dvh] flex">
-    <img class=" rounded-2xl size-full object-cover object-center" [src]="imageUrl()" [alt]="imageTitle()">
-    <div class="bg-[#000000c7] size-full absolute top-0 left-0 rounded-2xl flex flex-col justify-center items-center gap-4 text-center md:p-32 md:text-left md:items-start">
-      <section class="flex flex-col">
-        <h1 class="text-white text-4xl font-semibold max-w-[10ch]">{{initialText()}}<div class="text-secondary font-bebas text-5xl font-bold">{{mainText()}}</div>{{lastText()}}</h1>
-      </section>
-      <custom-button text="Contáctanos"/>
-    </div>
-  </section>
-
+<section class="relative h-[84dvh] flex">
+  <img
+    class="rounded-2xl size-full object-cover object-center"
+    [src]="imageUrl()"
+    [alt]="imageTitle()"
+  />
+  <div
+    class="bg-[#000000c7] size-full absolute top-0 left-0 rounded-2xl flex flex-col justify-center items-center gap-4 text-center md:p-32 md:text-left md:items-start"
+  >
+    <section class="flex flex-col">
+      <h1 class="text-white text-4xl font-semibold max-w-[10ch]">
+        {{ initialText() }}
+        <div class="text-secondary font-bebas text-5xl font-bold">
+          {{ mainText() }}
+        </div>
+        {{ lastText() }}
+      </h1>
+    </section>
+    <custom-button text="Contáctanos" />
+  </div>
+</section>

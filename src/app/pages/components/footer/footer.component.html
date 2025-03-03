@@ -1,19 +1,28 @@
-<footer class="bg-primary font-poppins grid-cols-[1fr_auto_1fr_auto_1fr] grid py-12 rounded-t-2xl mt-4">
-  <section class="gap-6 flex items-center justify-center">
-    <whatsapp-icon class="size-12 fill-white block"/>
-    <instagram-icon class="size-12 fill-white block"/>
-    <linkedin-icon class="size-12 fill-white block"/>
-    <facebook-icon class="size-12 fill-white block"/>
-  </section>
-  <separating-line class="w-[1px] bg-white" />
-  <section class="grid place-items-center text-white">
-    <app-logo class="self-center justify-self-center" [textWhite]="true" />
-    <p class="uppercase">© 2024 NST Group All rights reserved</p>
-  </section>
-  <separating-line class="w-[1px] bg-white" />
-  <ul class="relative grid grid-cols-2 gap-y-4 gap-x-8 text-white text-lg justify-self-center self-center">
+<footer
+  class="bg-primary gap-4 font-poppins grid-rows-[1fr_auto_1fr_auto_1fr] md:grid-cols-[1fr_auto_1fr_auto_1fr] md:grid-rows-1 grid py-12 rounded-t-2xl mt-4 px-2 md:px-8"
+>
+  <ul
+    class="relative flex md:flex-col gap-2 sm:gap-4 text-white text-lg justify-self-center self-center"
+  >
     @for (link of navLinks; track $index) {
-      <a class="hover:text-gray-300" [routerLink]="link.path" routerLinkActive="font-bold text-white">{{ link.label }}</a>
+    <a
+      class="hover:text-gray-300"
+      [routerLink]="link.path"
+      routerLinkActive="font-bold text-white"
+      >{{ link.label }}</a
+    >
     }
   </ul>
+  <separating-line class="h-[1px] md:w-[1px] md:h-full bg-white" />
+  <section class="grid place-items-center text-white">
+    <app-logo class="self-center justify-self-center" [textWhite]="true" />
+    <p class="uppercase text-center">© 2024 NST Group All rights reserved</p>
+  </section>
+  <separating-line class="h-[1px] md:w-[1px] md:h-full bg-white" />
+  <section class="gap-6 flex items-center justify-center">
+    <whatsapp-icon class="size-12 fill-white block" />
+    <instagram-icon class="size-12 fill-white block" />
+    <linkedin-icon class="size-12 fill-white block" />
+    <facebook-icon class="size-12 fill-white block" />
+  </section>
 </footer>

@@ -7,26 +7,16 @@
     [lastText]="banner.lastText"
   />
   <!-- <separating-line class="h-[2px] w-full"/> -->
-  <section class="flex gap-28 self-center h-[450px]">
-    <div class="relative w-[450px]">
-      <img
-        src="assets/inicio/aboutus.jpg"
-        class="size-full rounded-4xl shadow-2xl"
-        alt=""
-      />
-    </div>
-    <!-- <separating-line class="w-[2px] h-full"/> -->
+  <section
+    class="grid grid-rows-[1fr_auto] justify-items-center md:justify-items-normal md:grid-rows-1 md:grid-cols-[2fr_1fr] gap-8 self-center md:h-[450px]"
+  >
     <article
       class="flex flex-col gap-4 justify-center items-center pattern-boxes pattern-blue-500 pattern-bg-white pattern-size-6 pattern-opacity-20"
     >
-      <h2
-        class="text-4xl font-semibold bg-dark-transparency p-4 rounded-xl text-white shadow-2xl"
-      >
-        Nosotros
-      </h2>
-      <div class="bg-dark-transparency relative rounded-2xl text-white">
+      <h2 class="text-4xl font-semibold p-4 rounded-xl">Nosotros</h2>
+      <div class="bg-white relative rounded-2xl">
         <p
-          class="max-w-[80ch] rounded-2xl text-lg font-semibold text-justify leading-8 font-hind p-8 shadow-2xl relative"
+          class="max-w-[80ch] rounded-2xl text-lg font-semibold text-justify leading-8 font-hind p-8 py-6 shadow-2xl relative overflow-auto max-h-[350px]"
         >
           En <span class="text-primary">SNT Group</span>, somos un equipo
           multidisciplinario dedicado a transformar ideas en realidades sólidas
@@ -44,10 +34,21 @@
         </p>
       </div>
     </article>
+    <div class="relative h-[350px] w-full md:size-[450px]">
+      <img
+        src="assets/inicio/aboutus.jpg"
+        class="size-full rounded-2xl shadow-2xl object-center object-cover"
+        alt=""
+      />
+    </div>
   </section>
-  <section class="flex flex-col w-full px-10 py-4 gap-12">
-    <h2 class="text-4xl font-bold self-center">Por qué elegirnos?</h2>
-    <div class="grid grid-cols-3 grid-rows-2 gap-8">
+  <section class="flex flex-col w-full px-4 md:px-10 py-4 gap-12">
+    <h2 class="text-4xl font-bold self-center text-center">
+      Por qué elegirnos?
+    </h2>
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-8"
+    >
       @for (card of cards; track $index) {
       <info-card [title]="card.title" [description]="card.descripcion">
         <dynamic-icon
@@ -59,7 +60,7 @@
       }
     </div>
   </section>
-  <section class="flex flex-col w-full px-10 py-4 gap-10">
+  <section class="flex flex-col w-full px-4 md:px-10 gap-10">
     <h2 class="text-4xl font-bold self-center">Actividades</h2>
     <carousel [slides]="activities" slideTemplate>
       <ng-template slideTemplate let-card>
@@ -71,15 +72,19 @@
       </ng-template>
     </carousel>
   </section>
-  <section class="flex flex-col w-full px-10 py-4 gap-12">
-    <h2 class="text-4xl font-bold self-center">Alianzas</h2>
+  <section class="flex flex-col w-full px-4 md:px-10 py-4 gap-12">
+    <h2 class="text-4xl font-bold self-center text-center">Alianzas</h2>
     <infinite-carousel [items]="alianzas" />
   </section>
-  <section class="flex flex-col w-full px-10 py-4 gap-12">
-    <h2 class="text-4xl font-bold self-center">Dónde encontrarnos</h2>
-    <div class="grid grid-cols-[2fr_1fr] gap-8">
+  <section class="flex flex-col w-full px-4 md:px-10 py-4 gap-12">
+    <h2 class="text-4xl font-bold self-center text-center">
+      Dónde encontrarnos
+    </h2>
+    <div
+      class="grid grid-cols-1 grid-rows-[minmax(250px,1fr)_1fr] md:grid-cols-[2fr_1fr] md:grid-rows-1 gap-8"
+    >
       <img
-        class="rounded-2xl object-cover object-center"
+        class="rounded-2xl object-cover object-center h-full"
         src="assets/inicio/snt-office.jpg"
         alt="SNT Oficina"
       />

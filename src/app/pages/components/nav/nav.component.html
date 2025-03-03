@@ -1,11 +1,32 @@
-<nav class="flex justify-between sticky top-0 items-center p-4 font-poppins bg-white shadow-lg rounded-b-2xl z-10">
+<nav
+  class="flex justify-between sticky top-0 items-center py-8 px-4 sm:p-4 font-poppins bg-white shadow-lg rounded-b-2xl z-10 h-[12dvh]"
+>
   <app-logo />
-  <separating-line class="w-[1px] h-[70px]" />
-  <ul class="flex gap-6 text-gray-400">
+  <separating-line class="hidden md:block w-[1px] h-[70px]" />
+  <ul class="hidden md:flex gap-6 text-gray-400">
     @for (link of navLinks; track $index) {
-      <a class="hover:text-black" [routerLink]="link.path" routerLinkActive="font-bold text-black">{{ link.label }}</a>
+    <a
+      class="hover:text-black"
+      [routerLink]="link.path"
+      routerLinkActive="font-bold text-black"
+      >{{ link.label }}</a
+    >
     }
   </ul>
   <separating-line class="w-[1px] h-[70px]" />
-  <a class="bg-primary text-white p-4 rounded-lg font-semibold" routerLink="'/contacto'" routerLinkActive="'active'">Contáctanos</a>
+  <a
+    class="hidden md:block bg-primary text-white p-4 rounded-lg font-semibold"
+    routerLink="'/contacto'"
+    routerLinkActive="'active'"
+    >Contáctanos</a
+  >
+  <button
+    class="md:hidden size-[40px] cursor-pointer m-[10px]"
+    (click)="toggleMenu()"
+  >
+    <menu-icon class="stroke-primary size-full" />
+  </button>
+  @if (navMenu) {
+  <nav-menu (closeMenu)="toggleMenu()" />
+  }
 </nav>
