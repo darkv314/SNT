@@ -1,0 +1,11 @@
+.info-grid {
+  grid-template-areas: "A B";
+}
+
+.left {
+  grid-area: A;
+}
+
+.right {
+  grid-area: B;
+}

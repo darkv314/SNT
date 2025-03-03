@@ -10,9 +10,9 @@ import { ButtonComponent } from "../button/button.component";
   }
 })
 export class ImageBannerComponent {
-  imageTitle = input.required();
-  imageUrl = input.required();
-  mainText = input.required();
-  initialText = input.required();
-  lastText = input.required();
+  imageTitle = input.required<string>();
+  imageUrl = input.required<string>();
+  mainText = input<string>();
+  initialText = input<string>();
+  lastText = input<string>();
 }
