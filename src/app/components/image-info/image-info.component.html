@@ -1,15 +1,15 @@
-<section class="grid gap-8 grid-cols-[3fr_2fr] info-grid">
+<section class="flex flex-col gap-8 md:grid md:grid-cols-[3fr_2fr] info-grid">
   <img
-    class="w-full h-[450px] object-cover object-center rounded-2xl"
+    class="w-full h-[250px] md:h-[450px] object-cover object-center rounded-2xl"
     [src]="imgUrl()"
     alt=""
   />
   <article
-    class="flex flex-col gap-4 bg-dark-transparency rounded-2xl text-white font-semibold p-8 max-h-[450px]"
+    class="flex flex-col gap-4 bg-dark-transparency rounded-2xl text-white font-semibold p-8 max-h-[450px] items-center justify-center"
     [ngClass]="{ left: left(), right: !left() }"
   >
     <h2 class="text-4xl">{{ title() }}</h2>
-    <p class="overflow-auto text-pretty">
+    <p class="overflow-auto text-justify max-w-[80ch]">
       <ng-content></ng-content>
     </p>
   </article>

@@ -1,25 +1,38 @@
-<div class="flex flex-col gap-2">
+<div
+  class="flex flex-col gap-2"
+  [ngClass]="{ 'flex-col-reverse': buttonsOnTop() }"
+>
   <div class="embla relative py-4" carouselDirective>
-    <div class="embla__container cursor-grab" [ngClass]="{'cursor-grabbing': isDragging}">
-      @for (slide of slides(); track $index) {
-        <div class="embla__slide px-2">
-          <ng-template
+    <div
+      class="embla__container cursor-grab"
+      [ngClass]="{ 'cursor-grabbing': isDragging }"
+    >
+      @for (slide of slides(); track $index; let idx = $index) {
+      <div class="embla__slide px-2" slide>
+        <ng-template
           [ngTemplateOutlet]="slideTemplate.call(slide)"
-          [ngTemplateOutletContext]="{$implicit: slide}">
-          </ng-template>
-        </div>
+          [ngTemplateOutletContext]="{
+            $implicit: slide,
+            isActive: idx === activeSlideIdx
+          }"
+        >
+        </ng-template>
+      </div>
       }
     </div>
   </div>
   <section class="flex gap-4 self-center">
-    <button class="bg-black size-[40px] rounded-full p-2 cursor-pointer" (click)="prev()">
+    <button
+      class="bg-black size-[40px] rounded-full p-2 cursor-pointer"
+      (click)="prev()"
+    >
       <arrow-left-icon class="stroke-secondary size-full" />
     </button>
-    <button class="bg-black size-[40px] rounded-full p-2 cursor-pointer" (click)="next()">
-      <arrow-right-icon class="stroke-secondary size-full"/>
+    <button
+      class="bg-black size-[40px] rounded-full p-2 cursor-pointer"
+      (click)="next()"
+    >
+      <arrow-right-icon class="stroke-secondary size-full" />
     </button>
   </section>
 </div>
-
-
-

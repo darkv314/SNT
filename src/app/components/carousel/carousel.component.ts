@@ -27,14 +27,22 @@ export class SlideTemplateDirective {
 export class CarouselComponent<T> {
   slides = input.required<T[]>();
   carousel = viewChild.required<CarouselDirective>(CarouselDirective);
-  slideTemplate = contentChild.required(SlideTemplateDirective, {read: TemplateRef<{
-    $implicit: T
-  }>})
-
+  slideTemplate = contentChild.required(SlideTemplateDirective, {
+    read: TemplateRef<{
+      $implicit: T,
+      isActive: boolean
+    }>
+  })
+  buttonsOnTop = input<boolean>(false);
+  activeSlideIdx = 0;
   carouselApi: EmblaCarouselType | undefined;
 
   ngAfterViewInit(): void {
-    this.carouselApi = EmblaCarousel(this.carousel().element.nativeElement, {loop: true, dragFree: true});
+    this.carouselApi = EmblaCarousel(this.carousel().element.nativeElement, { loop: true, dragFree: true });
+    this.carouselApi.on('select', () => {
+      this.activeSlideIdx = this.carouselApi!.selectedScrollSnap();
+      console.log(this.activeSlideIdx, 'owo');
+    });
   }
 
   next() {
