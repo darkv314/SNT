@@ -71,7 +71,7 @@ export const actividades = [
   {
     title: 'Agricología',
     descripcion: 'Ejecutamos proyectos de alto impacto social, como transporte público y plantas de tratamiento.',
-    img: 'assets/inicio/actividades/proyectos-masivos.jpg',
+    img: 'assets/inicio/actividades/agricologia.jpg',
   }
 ]
 
