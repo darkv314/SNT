@@ -8,10 +8,6 @@ export const navLinks = [
     path: 'nosotros',
   },
   {
-    label: 'Alianzas',
-    path: 'alianzas',
-  },
-  {
     label: 'Actividades',
     path: 'actividades',
   },

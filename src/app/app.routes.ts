@@ -22,8 +22,4 @@ export const routes: Routes = [
     path: 'actividades',
     component: ActividadesComponent,
   },
-  {
-    path: 'alianzas',
-    component: AlianzasComponent,
-  }
 ];
