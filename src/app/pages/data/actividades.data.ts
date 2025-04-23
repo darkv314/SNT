@@ -35,8 +35,8 @@ export const actividades = [
     img: 'assets/inicio/actividades/salud.jpg',
   },
   {
-    title: 'Agricologia',
-    descripcion: 'SNT Group es una institución privada dedicada a transformar el sector agropecuario mediante prácticas agrícolas sostenibles. Se enfoca en el uso eficiente de recursos naturales, innovación tecnológica y fortalecimiento de capacidades locales para promover la conservación del suelo, agua y biodiversidad. Al colaborar con comunidades, productores y centros de investigación, SNT Group impulsa una agricultura resiliente al clima, seguridad alimentaria, economía circular y desarrollo rural sostenible.',
+    title: 'Agricología',
+    descripcion: 'SNT Group transforma el sector agropecuario a través de prácticas sostenibles, innovación tecnológica y colaboración comunitaria, promoviendo la conservación de recursos naturales y el desarrollo rural sostenible.',
     img: 'assets/inicio/actividades/agricologia.jpg',
   }
 ]
