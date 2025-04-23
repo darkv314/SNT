@@ -70,8 +70,8 @@ export const actividades = [
   },
   {
     title: 'Agricología',
-    descripcion: 'Ejecutamos proyectos de alto impacto social, como transporte público y plantas de tratamiento.',
-    img: 'assets/inicio/actividades/agricologia.jpg',
+    descripcion: 'SNT Group transforma el sector agropecuario a través de prácticas sostenibles, innovación tecnológica y colaboración comunitaria, promoviendo la conservación de recursos naturales y el desarrollo rural sostenible.',
+    img: 'assets/inicio/actividades/proyectos-masivos.jpg',
   }
 ]
 
