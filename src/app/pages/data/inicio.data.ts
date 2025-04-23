@@ -71,7 +71,7 @@ export const actividades = [
   {
     title: 'Agricología',
     descripcion: 'SNT Group transforma el sector agropecuario a través de prácticas sostenibles, innovación tecnológica y colaboración comunitaria, promoviendo la conservación de recursos naturales y el desarrollo rural sostenible.',
-    img: 'assets/inicio/actividades/proyectos-masivos.jpg',
+    img: 'assets/inicio/actividades/agricologia.jpg',
   }
 ]
 
