@@ -35,8 +35,8 @@ export const actividades = [
     img: 'assets/inicio/actividades/salud.jpg',
   },
   {
-    title: 'Proyectos Masivos',
-    descripcion: 'SNT Group se especializa en la representación y distribución de productos de calidad mundial, adaptándose a las necesidades del mercado local y ofreciendo la mejor relación calidad-precio.',
-    img: 'assets/inicio/actividades/proyectos-masivos.jpg',
+    title: 'Agricologia',
+    descripcion: 'SNT Group es una institución privada dedicada a transformar el sector agropecuario mediante prácticas agrícolas sostenibles. Se enfoca en el uso eficiente de recursos naturales, innovación tecnológica y fortalecimiento de capacidades locales para promover la conservación del suelo, agua y biodiversidad. Al colaborar con comunidades, productores y centros de investigación, SNT Group impulsa una agricultura resiliente al clima, seguridad alimentaria, economía circular y desarrollo rural sostenible.',
+    img: 'assets/inicio/actividades/agricologia.jpg',
   }
 ]

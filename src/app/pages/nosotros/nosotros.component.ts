@@ -14,7 +14,7 @@ export class NosotrosComponent {
     mainText: 'Nosotros',
   }
   nosotros = {
-    imgUrl: 'assets/nosotros/icon.jpg',
+    imgUrl: 'assets/nosotros/nosotros-descripcion.jpg',
     title: 'Nosotros',
     left: false
   }

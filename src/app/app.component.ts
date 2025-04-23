@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, viewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavComponent } from "./pages/components/nav/nav.component";
 import { FooterComponent } from "./pages/components/footer/footer.component";
@@ -10,4 +10,8 @@ import { FooterComponent } from "./pages/components/footer/footer.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  footerRef = viewChild<FooterComponent>('footer');
+  scrollToFooter() {
+    this.footerRef()?.elementRef.nativeElement.scrollIntoView({ behavior: 'smooth' });
+  }
 }
