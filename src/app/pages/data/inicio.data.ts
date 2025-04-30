@@ -40,27 +40,27 @@ export const porqueNosotros = [
 export const actividades = [
   {
     title: 'Estudios Técnicos',
-    descripcion: 'Realizamos estudios de viabilidad e impacto ambiental para establecer una base sólida en cada proyecto.',
+    descripcion: 'Realizamos estudios de viabilidad, factibilidad e impacto ambiental para establecer una base sólida en cada proyecto, garantizando decisiones responsables desde el inicio. Nuestro enfoque integral nos permite adaptarnos a diversos sectores asegurando que cada emprendimiento sea técnica, ambiental y socialmente sostenible.',
     img: 'assets/inicio/actividades/estudios-tecnicos.jpg',
   },
   {
     title: 'Infraestructura',
-    descripcion: 'Construimos desde edificios comerciales hasta complejos residenciales, priorizando calidad y durabilidad.',
+    descripcion: 'Construimos desde edificios comerciales hasta complejos residenciales, priorizando la calidad, la durabilidad y el cumplimiento de los más altos estándares técnicos. Cada obra refleja nuestro compromiso con la eficiencia, la seguridad y la satisfacción de nuestros clientes, adaptándonos a las necesidades de cada proyecto y entorno.',
     img: 'assets/inicio/actividades/infraestructura.jpg',
   },
   {
     title: 'Carreteras',
-    descripcion: 'Diseñamos y construimos carreteras con un enfoque en conectividad y sostenibilidad.',
+    descripcion: 'Diseñamos y construimos carreteras con un enfoque en conectividad y sostenibilidad, contribuyendo al desarrollo regional y mejorando la calidad de vida de las comunidades. Aplicamos soluciones técnicas eficientes que minimizan el impacto ambiental y optimizan los recursos, garantizando infraestructuras duraderas, seguras y adaptadas al entorno.',
     img: 'assets/inicio/actividades/carreteras.jpg',
   },
   {
     title: 'Servicios Petroleros',
-    descripcion: 'Proveemos infraestructura para la extracción y transporte de hidrocarburos, cumpliendo con altos estándares de seguridad.',
+    descripcion: 'Proveemos infraestructura para la extracción y transporte de hidrocarburos, cumpliendo con los más altos estándares de seguridad, calidad y eficiencia operativa. Nuestro trabajo incluye el diseño, construcción y mantenimiento de sistemas adaptados a las exigencias del sector energético, asegurando operaciones sostenibles y confiables en cada etapa del proceso.',
     img: 'assets/inicio/actividades/servicios-petroleros.jpg',
   },
   {
     title: 'Tecnología',
-    descripcion: 'Implementamos soluciones de monitoreo y digitalización para mejorar la eficiencia en cada proyecto.',
+    descripcion: 'Implementamos soluciones de monitoreo y digitalización para mejorar la eficiencia, el control y la toma de decisiones en cada proyecto. A través del uso de tecnologías innovadoras, optimizamos procesos, reducimos costos operativos y aseguramos un seguimiento en tiempo real que impulsa la productividad y la transparencia en todas nuestras áreas de trabajo.',
     img: 'assets/inicio/actividades/tecnologia.jpg',
   },
   {
